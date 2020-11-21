@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
+body {
+  background-color: white;
+  margin: 0;
+  top: 0;
+}
+
+.header {
+  background-color: #0f0f0f;
+  margin: 0;
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  float: right;
+  -webkit-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  -moz-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  border-bottom: 6px solid #e89e1e;
+  z-index: 100;
+}
+.nav {
+  float: right;
+  margin-right: 220px;
+}
+
+li {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 24px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+ul.header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  width: 100%;
+}
+a.header-link {
+  text-decoration: none;
+  color: #adadad;
+}
+.name {
+  color: white;
+  text-decoration: none;
+}
+a.header-active {
+  color: white;
+  border-bottom: 3px solid #e89e1e;
+}
+a.header-link:hover {
+  border-bottom: 3px solid #e89e1e;
+}
+
+img.enigma-logo {
+  max-width: 250px;
+  margin-left: 220px;
+}
+
+.temp-text {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.member-avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  -moz-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  cursor: pointer;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.member-list {
+  text-align: center;
+  width: 100%;
+}
+
+.content-section {
+  columns: 350px 3;
+  width: 1200px;
+  margin-top: 20px;
+}
+.content-thumbnail {
+  width: 350px;
+}
+.content-title {
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+  padding-top: 5px;
+  color: black;
+}
+.content-upload {
+  width: 350px;
+  display: block;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  -moz-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  z-index: 98;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: black;
+  padding-bottom: 10px;
+}
+.content-uploadAuthor {
+  width: 20px;
+  border-radius: 50%;
+  position: relative;
+  top: 15px;
+}
+.content-timeSinceUpload {
+  font-size: 14px;
+  top: 16px;
+  position: relative;
+  padding-left: 3px;
+  opacity: 60%;
+}
+.content-description {
+  width: 310px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.page-title {
+  font-family: "Oswald", sans-serif;
+  display: block;
+  position: relative;
+  bottom: 500px;
+  color: white;
+  font-size: 100px;
+  content: "";
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #0f0f0f;
+  margin: 0;
+  color: white;
+  position: relative;
+  width: 100%;
+  -webkit-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  -moz-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  border-top: 6px solid #e89e1e;
+  z-index: 100;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  bottom: 0;
+}
+a.creator-link {
+  text-decoration: underline;
+  color: white;
+}
