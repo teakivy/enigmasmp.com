@@ -73,7 +73,7 @@ img.enigma-logo {
   background-color: #0f0f0f;
   margin: 0;
   color: white;
-  position: fixed;
+  position: relative;
   width: 100%;
   -webkit-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
   -moz-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
@@ -91,4 +91,91 @@ img.enigma-logo {
 a.creator-link {
   text-decoration: underline;
   color: white;
+}
+
+.member {
+  width: 250px;
+  display: block;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  -moz-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  height: 460px;
+  margin-bottom: 20px;
+}
+.member-avatar {
+  width: 250px;
+  height: 250px;
+}
+.member-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  margin-top: 10px;
+  text-align: center;
+}
+.member-description {
+  margin-left: 14px;
+  margin-right: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 6px;
+  text-align: center;
+}
+.member-list {
+  columns: 250px 4;
+  width: 1200px;
+  padding-top: 30px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.youtube {
+  background-color: red;
+}
+.twitter {
+  background-color: #1da1f2;
+}
+.twitch {
+  background-color: #6441a5;
+}
+
+.fa-youtube-play {
+  margin-top: 10px;
+}
+.fa-twitter {
+  margin-top: 10px;
+}
+.fa-twitch {
+  margin-top: 11px;
+}
+
+.inactive-link {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.member-socials {
+  columns: 50px 3;
+  width: 190px;
+  margin-top: 20px;
+}
+
+.social-icon:hover {
+  background-color: #e89e1e;
+  -webkit-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  -moz-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+}
+.inactive-link:hover {
+  background-color: gray;
+  -webkit-box-shadow: 0px 0px 15px -1px#ffff;
+  -moz-box-shadow: 0px 3px 15px -1px #ffff;
+  box-shadow: 0px 3px 15px -1px #ffff;
 }
