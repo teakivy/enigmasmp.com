@@ -1,0 +1,8 @@
+# for root
+/*              /pages/home/index.html     200
+​
+# for the rest
+/members/*        /pages/members/index.html     200
+/server/*      /pages/server/index.html   200
+/apply/*      /pages/apply/index.html   200
+​
