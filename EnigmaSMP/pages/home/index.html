@@ -10,18 +10,65 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/imagecar.css" />
+    <link rel="stylesheet" href="css/loader.css" />
     <link rel="shortcut icon" href="../home/assets/img/e.png">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js"></script>
+    
+    <script src="https://kit.fontawesome.com/f8f10ea0a9.js" crossorigin="anonymous"></script>
+
+    
+    <script src="js/script.js"></script>
   </head>
 
   <body onload="pageLoad()">
     <script language='javascript'>
       console.log("Hello Script File")
     </script>
-    <script src="js/script.js"></script>
-    <div class="header">
+
+    <div class="page-content-unloaded" id="page-unloaded">
+      <div class="loader">
+  <div class="duo duo1">
+    <div class="loader-dot dot-a"></div>
+    <div class="loader-dot dot-b"></div>
+  </div>
+  <div class="duo duo2">
+    <div class="loader-dot dot-a"></div>
+    <div class="loader-dot dot-b"></div>
+  </div>
+</div>
+    </div>
+
+    <div class="page-content-loaded" id="page-content">
+    <div class="header desktop">
       <a href="../home/index.html" class=""
         ><img src="assets/img/enigma.png" alt="enigma-logo" class="enigma-logo"
       /></a>
+      <ul class="nav">
+        <li class="name"></li>
+        <li class="header-link">
+          <b
+            ><a href="../home/index.html" class="header-link header-active"
+              >Home</a
+            ></b
+          >
+        </li>
+        <li class="header-link">
+          <b><a href="../members/index.html" class="header-link">Members</a></b>
+        </li>
+        <li class="header-link">
+          <b><a href="../server/index.html" class="header-link">Server</a></b>
+        </li>
+        <li class="header-link">
+          <b><a href="../apply/index.html" class="header-link">Apply</a></b>
+        </li>
+      </ul>
+    </div>
+
+    <div class="header mobile">
+      <i class="fas fa-bars"></i>
+      <a href="../home/index.html" class="main-header-mobile"
+        ><center><img src="assets/img/enigma.png" alt="enigma-logo" class=" mobile mobile-enigma-logo"
+      /></center></a>
       <ul class="nav">
         <li class="name"></li>
         <li class="header-link">
@@ -117,6 +164,10 @@
         <span class="dot" onclick="currentSlide(6)"></span>
         <span class="dot" onclick="currentSlide(7)"></span>
       </div>
+
+      <center>
+      <div class="welcome">Welcome to <span onclick="seven()" class="seven">E</span>nigma SMP!</div>
+      </center>
 
       <div class="member-list">
         <img
@@ -448,11 +499,217 @@
             </div>
           </span>
         </div>
-      </center>
 
+
+        <!-- MOBILE CONTENT SECTION!!!! -->
+        <div class="mobile-content-section mobile">
+          <span class="mobile-content-upload">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=PYINQoMMI_c"
+              ><img
+                class="mobile-content-thumbnail"
+                src="https://i.ytimg.com/vi/PYINQoMMI_c/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAQ-qga34NRO6CIcSn12XqEZT0G_Q"
+                alt="Thumbnail"
+            /></a>
+            <div class="mobile-content-description">
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=PYINQoMMI_c"
+                ><div class="mobile-content-title">This is a sample Title</div></a
+              >
+              <span class="mobile-content-uploadAuthorGroup"
+                ><a target="_blank" href="https://www.youtube.com/teakivy"
+                  ><img
+                    src="assets/img/member-logos/teakivy.jpg"
+                    alt="TeakIvy"
+                    class="mobile-content-uploadAuthor" /></a
+              ></span>
+              <span class="mobile-content-timeSinceUpload">4 hours ago</span>
+            </div>
+          </span>
+          <span class="mobile-content-upload">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=PYINQoMMI_c"
+              ><img
+                class="mobile-content-thumbnail"
+                src="https://i.ytimg.com/vi/PYINQoMMI_c/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAQ-qga34NRO6CIcSn12XqEZT0G_Q"
+                alt="Thumbnail"
+            /></a>
+            <div class="mobile-content-description">
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=PYINQoMMI_c"
+                ><div class="mobile-content-title">This is a sample Title</div></a
+              >
+              <span class="mobile-content-uploadAuthorGroup"
+                ><a target="_blank" href="https://www.youtube.com/teakivy"
+                  ><img
+                    src="assets/img/member-logos/teakivy.jpg"
+                    alt="TeakIvy"
+                    class="mobile-content-uploadAuthor" /></a
+              ></span>
+              <span class="mobile-content-timeSinceUpload">4 hours ago</span>
+            </div>
+          </span>
+          <span class="mobile-content-upload">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=PYINQoMMI_c"
+              ><img
+                class="mobile-content-thumbnail"
+                src="https://i.ytimg.com/vi/PYINQoMMI_c/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAQ-qga34NRO6CIcSn12XqEZT0G_Q"
+                alt="Thumbnail"
+            /></a>
+            <div class="mobile-content-description">
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=PYINQoMMI_c"
+                ><div class="mobile-content-title">This is a sample Title</div></a
+              >
+              <span class="mobile-content-uploadAuthorGroup"
+                ><a target="_blank" href="https://www.youtube.com/teakivy"
+                  ><img
+                    src="assets/img/member-logos/teakivy.jpg"
+                    alt="TeakIvy"
+                    class="mobile-content-uploadAuthor" /></a
+              ></span>
+              <span class="mobile-content-timeSinceUpload">4 hours ago</span>
+            </div>
+          </span>
+          <span class="mobile-content-upload">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=PYINQoMMI_c"
+              ><img
+                class="mobile-content-thumbnail"
+                src="https://i.ytimg.com/vi/PYINQoMMI_c/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAQ-qga34NRO6CIcSn12XqEZT0G_Q"
+                alt="Thumbnail"
+            /></a>
+            <div class="mobile-content-description">
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=PYINQoMMI_c"
+                ><div class="mobile-content-title">This is a sample Title</div></a
+              >
+              <span class="mobile-content-uploadAuthorGroup"
+                ><a target="_blank" href="https://www.youtube.com/teakivy"
+                  ><img
+                    src="assets/img/member-logos/teakivy.jpg"
+                    alt="TeakIvy"
+                    class="mobile-content-uploadAuthor" /></a
+              ></span>
+              <span class="mobile-content-timeSinceUpload">4 hours ago</span>
+            </div>
+          </span>
+          <span class="mobile-content-upload">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=PYINQoMMI_c"
+              ><img
+                class="mobile-content-thumbnail"
+                src="https://i.ytimg.com/vi/PYINQoMMI_c/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAQ-qga34NRO6CIcSn12XqEZT0G_Q"
+                alt="Thumbnail"
+            /></a>
+            <div class="mobile-content-description">
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=PYINQoMMI_c"
+                ><div class="mobile-content-title">This is a sample Title</div></a
+              >
+              <span class="mobile-content-uploadAuthorGroup"
+                ><a target="_blank" href="https://www.youtube.com/teakivy"
+                  ><img
+                    src="assets/img/member-logos/teakivy.jpg"
+                    alt="TeakIvy"
+                    class="mobile-content-uploadAuthor" /></a
+              ></span>
+              <span class="mobile-content-timeSinceUpload">4 hours ago</span>
+            </div>
+          </span>
+          <span class="mobile-content-upload">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=PYINQoMMI_c"
+              ><img
+                class="mobile-content-thumbnail"
+                src="https://i.ytimg.com/vi/PYINQoMMI_c/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAQ-qga34NRO6CIcSn12XqEZT0G_Q"
+                alt="Thumbnail"
+            /></a>
+            <div class="mobile-content-description">
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=PYINQoMMI_c"
+                ><div class="mobile-content-title">This is a sample Title</div></a
+              >
+              <span class="mobile-content-uploadAuthorGroup"
+                ><a target="_blank" href="https://www.youtube.com/teakivy"
+                  ><img
+                    src="assets/img/member-logos/teakivy.jpg"
+                    alt="TeakIvy"
+                    class="mobile-content-uploadAuthor" /></a
+              ></span>
+              <span class="mobile-content-timeSinceUpload">4 hours ago</span>
+            </div>
+          </span>
+          <span class="mobile-content-upload">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=PYINQoMMI_c"
+              ><img
+                class="mobile-content-thumbnail"
+                src="https://i.ytimg.com/vi/PYINQoMMI_c/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAQ-qga34NRO6CIcSn12XqEZT0G_Q"
+                alt="Thumbnail"
+            /></a>
+            <div class="mobile-content-description">
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=PYINQoMMI_c"
+                ><div class="mobile-content-title">This is a sample Title</div></a
+              >
+              <span class="mobile-content-uploadAuthorGroup"
+                ><a target="_blank" href="https://www.youtube.com/teakivy"
+                  ><img
+                    src="assets/img/member-logos/teakivy.jpg"
+                    alt="TeakIvy"
+                    class="mobile-content-uploadAuthor" /></a
+              ></span>
+              <span class="mobile-content-timeSinceUpload">4 hours ago</span>
+            </div>
+          </span>
+          <span class="mobile-content-upload">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=PYINQoMMI_c"
+              ><img
+                class="mobile-content-thumbnail"
+                src="https://i.ytimg.com/vi/PYINQoMMI_c/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAQ-qga34NRO6CIcSn12XqEZT0G_Q"
+                alt="Thumbnail"
+            /></a>
+            <div class="mobile-content-description">
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=PYINQoMMI_c"
+                ><div class="mobile-content-title">This is a sample Title</div></a
+              >
+              <span class="mobile-content-uploadAuthorGroup"
+                ><a target="_blank" href="https://www.youtube.com/teakivy"
+                  ><img
+                    src="assets/img/member-logos/teakivy.jpg"
+                    alt="TeakIvy"
+                    class="mobile-content-uploadAuthor" /></a
+              ></span>
+              <span class="mobile-content-timeSinceUpload">4 hours ago</span>
+            </div>
+          </span>
+        </div>
+        </center>
+      
+      
     </div>
     </div>
-    <div class="footer">
+    <div class="footer" id="page-content">
       © Copyright 2020 Enigma SMP |
       <a href="https://discord.gg/p5AGSyU" class="creator-link" target="_blank"
         >Join our Discord</a
@@ -472,5 +729,6 @@
         >@KingElffe</a
       >
     </div>
+  </div>
   </body>
 </html>

@@ -1,7 +1,11 @@
 var slideIndex = 1;
 var slidesChanged = false;
+
+var sevenCounter = 0;
+
 // showSlides(1);
 console.log("Hello JS File");
+pageLoad();
 
 function pageLoad() {
   showSlides((slideIndex = Math.floor(Math.random() * 7) + 1));
@@ -9,6 +13,9 @@ function pageLoad() {
   setInterval(function () {
     carouselRotation();
   }, 3000);
+
+  document.getElementById("page-content").style.display = "block";
+  document.getElementById("page-unloaded").style.display = "none";
 }
 
 function carouselRotation() {
@@ -68,4 +75,17 @@ $(function () {
   heroresize();
   // remove if you don't need dynamic resizing
   $(".carousel").on("resize", heroresize);
+});
+
+function seven() {
+  sevenCounter = sevenCounter + 1;
+  if (sevenCounter == 7) {
+    window.open("../seven/index.html");
+    sevenCounter = 0;
+  }
+}
+
+Mousetrap.bind("s", function (e) {
+  // your function here...
+  plusSlides(1);
 });
