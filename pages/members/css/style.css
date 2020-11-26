@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+body {
+  background-color: white;
+  margin: 0;
+  top: 0;
+}
+
+.header {
+  background-color: #0f0f0f;
+  margin: 0;
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  float: right;
+  -webkit-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  -moz-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  border-bottom: 6px solid #e89e1e;
+}
+.nav {
+  float: right;
+  margin-right: 220px;
+}
+
+li {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 24px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+ul.header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  width: 100%;
+}
+a.header-link {
+  text-decoration: none;
+  color: #adadad;
+}
+.name {
+  color: white;
+  text-decoration: none;
+}
+a.header-active {
+  color: white;
+  border-bottom: 3px solid #e89e1e;
+}
+a.header-link:hover {
+  border-bottom: 3px solid #e89e1e;
+}
+
+img.enigma-logo {
+  max-width: 250px;
+  margin-left: 220px;
+}
+
+.temp-text {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #0f0f0f;
+  margin: 0;
+  color: white;
+  position: relative;
+  width: 100%;
+  -webkit-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  -moz-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  border-top: 6px solid #e89e1e;
+  z-index: 100;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  bottom: 0;
+}
+a.creator-link {
+  text-decoration: underline;
+  color: white;
+}
+
+.member {
+  width: 250px;
+  display: block;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  -moz-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  height: 395px;
+  margin-bottom: 20px;
+}
+.member-blank {
+  width: 250px;
+  display: block;
+  background-color: white;
+  height: 395px;
+  margin-bottom: 20px;
+}
+.member-avatar {
+  width: 250px;
+  height: 250px;
+}
+.member-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  margin-top: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.member-description {
+  margin-left: 14px;
+  margin-right: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 6px;
+  text-align: center;
+  display: none;
+}
+.member-list {
+  columns: 250px 4;
+  width: 1200px;
+  padding-top: 40px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.66s ease;
+  z-index: 20;
+  margin-bottom: 20px;
+}
+
+.youtube {
+  background-color: red;
+}
+.twitter {
+  background-color: #1da1f2;
+}
+.twitch {
+  background-color: #6441a5;
+}
+
+.fa-youtube-play {
+  margin-top: 10px;
+}
+.fa-twitter {
+  margin-top: 10px;
+}
+.fa-twitch {
+  margin-top: 11px;
+}
+
+.inactive-link {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.member-socials {
+  columns: 50px 3;
+  width: 190px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.social-icon:hover {
+  background-color: #e89e1e;
+  -webkit-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  -moz-box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+  box-shadow: 0px 3px 15px -1px rgba(115, 115, 115, 1);
+
+  transition: 0.2s ease;
+}
+.inactive-link:hover {
+  background-color: gray;
+  -webkit-box-shadow: 0px 0px 15px -1px#ffff;
+  -moz-box-shadow: 0px 3px 15px -1px #ffff;
+  box-shadow: 0px 3px 15px -1px #ffff;
+}
